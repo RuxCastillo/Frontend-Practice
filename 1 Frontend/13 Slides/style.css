@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+.container-body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    border-radius: 100px;
+    width: 10rem;
+    height: 40rem;
+    position: relative;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.panel h3 {
+    position: absolute;
+    bottom: 2px;
+    color: white;
+    opacity: 0;
+}
+
+h3:hover {
+    animation-name: letras-apareciendo;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.panel:hover {
+    animation-name: aumentar-tamaño;
+    animation-duration: 3s;
+    width: 30rem;
+}
+
+@keyframes aumentar-tamaño {
+    from {
+        width: 10rem;
+    }
+    to {
+        width: 30rem;
+    }
+}
+
+@keyframes letras-apareciendo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
