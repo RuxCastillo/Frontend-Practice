@@ -13,10 +13,12 @@ html {
 .container {
     background-image: linear-gradient(rgba(223, 182, 182, 0.377), rgba(223, 182, 182, 0.377)), url(./fondo.jpg);
     width: 100vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-size: cover;
+    background-attachment: fixed;
     overflow-x: hidden;
     min-width: 50rem;
 }
