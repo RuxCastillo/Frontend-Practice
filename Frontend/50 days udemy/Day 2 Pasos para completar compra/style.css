@@ -6,66 +6,100 @@
     box-sizing: border-box;
 }
 
-.body {
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 250px;
-    height: 5px;
-    background-color: chocolate;
-    margin: 20px;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.container::after {
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 350px;
+    position: relative;
+    margin: 30px;
+}
+
+.progress::before {
     content: "";
-    display: block;
     position: absolute;
-    background-image: linear-gradient(to right, blue 0%, chocolate 60%);
-    height: 7px;
-    width: 250px;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transform: translateY(-50%);
+    background-color: #e0e0e0;
+    opacity: .5;
+    z-index: -1;
+
+}
+
+.progress-bar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    transform: translateY(-50%);
+    background-color: aqua;
+    transition: .3s;
 }
 
 .num {
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    line-height: 25px;
-    background-color: yellow;
+    width: 25px;
     border-radius: 50%;
-    border: 3px solid chocolate;
-    z-index: 1;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    background-color: white;
+    border: solid 3px #e0e0e0;
 }
 
-.active {
-    border: 3px solid blue;
+.num.active {
+    border-color: aqua;
+    transition: .4s ease;
+    background-color: white;
+}
+
+.buttons {
+    height: 30px;
 }
 
 .btn {
-    width: 90px;
-    height: 30px;
-    margin: 5px;
+    width: 20%;
+    height: 100%;
+    margin: 0 10px;
     border: none;
-    background-color: gray;
-    border-radius: 7px;
     color: white;
-    font-size: 1rem;
+    background-color: green;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.btn:hover {
-    border: 1px solid black;
+.btn:active {
+    transform: scale(0.97);
 }
 
 .prev {
-    cursor: not-allowed; 
+    cursor: not-allowed;
 }
+
+
+
+
+
