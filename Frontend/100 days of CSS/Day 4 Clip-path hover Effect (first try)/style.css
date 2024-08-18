@@ -15,12 +15,27 @@ body {
     align-items: center;
 }
 
-
 .container {
-    width: 400px;
+    width: 800px;
     height: 200px;
     background-color: #f7f7f7;
     border-radius: 8px;
     color: black;
     padding: 20px;
+    clip-path: rect(0px 800px 200px 400px);
+    transition: 3s;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transform: translateX(-25%);
 }
+
+h1, p {
+    grid-column: 1/1;
+}
+
+.container:hover{
+    transition: 3s;
+    clip-path: rect(0px 420px 200px 0px);
+    transform: translateX(25%)
+}
+
