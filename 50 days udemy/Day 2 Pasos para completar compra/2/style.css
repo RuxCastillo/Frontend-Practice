@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 20rem;
+    width: 40rem;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-numbers {
+    display: flex;
+    margin: 1rem;
+    width: 35rem;
+    justify-content: space-between;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10%;
+    width: 100%;
+    background-color: gray;
+    z-index: -1
+}
+
+.number {
+    border-radius: 50%;
+    border: 3px solid gray;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: white;
+}
+
+.container-buttons {
+    margin-top: 1.5rem;
+}
+
+button {
+    border: none;
+    background-color: green;
+    color: white;
+    height: 4rem;
+    width: 10rem;
+    margin: .5rem;
+    border-radius: 7px;
+}
+
+.active {
+    border: 3px solid blue;
+}
+
+button:active {
+    transform: scale(.97);
+}
+
+.block {
+    background-color: rgb(81, 128, 93);
+    cursor: not-allowed;
+}
