@@ -1,0 +1,41 @@
+.main__pricing {
+    justify-content: space-evenly;
+}
+ .main__pricing div {
+    border: 3px solid black;
+    width: 20rem;
+    height: 25rem;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+    font-size: 1.6rem;
+ }
+
+ .main__pricing * {
+    width: 100%;
+ }
+
+ .main__pricing h3 {
+    line-height: 4rem;
+    background-color: var(--secondary-color);
+ }
+
+ .main__pricing h4 {
+    line-height: 5rem;
+    font-size: 2rem;
+ }
+
+ .main__pricing ul {
+    height: 10rem;
+ }
+
+ .main__pricing li {
+    line-height: 2.5rem;
+    list-style-type: none;
+ }
+
+ .main__pricing button {
+    height: 3rem;
+    margin: auto;
+    width: 8rem;
+ }

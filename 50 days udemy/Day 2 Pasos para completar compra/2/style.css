@@ -47,6 +47,15 @@ body {
     z-index: -1
 }
 
+.barra-llena {
+    height: 100%;
+    width: 0%;
+    background-color: blue;
+    z-index: -2
+}
+
+
+
 .number {
     border-radius: 50%;
     border: 3px solid gray;
@@ -75,6 +84,8 @@ button {
 
 .active {
     border: 3px solid blue;
+    background-color: aqua;
+    transition: 1s;
 }
 
 button:active {

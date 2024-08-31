@@ -1,0 +1,21 @@
+.main__email {
+    flex-direction: column;
+}
+
+.main__email * {
+    margin: .5rem;
+}
+
+.main__email input {
+    height: 1.4rem;
+    width: 20rem;
+    font-size: .9rem;
+    padding: 2px;
+}
+
+.main__email button {
+    height: 1.7rem;
+    width: 8rem;
+    font-weight: 700;
+    font-size: .9rem;
+}

@@ -1,0 +1,11 @@
+.btn {
+    background-color: yellow;
+    border: none;
+    text-transform: uppercase;
+}
+
+.flex-center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
