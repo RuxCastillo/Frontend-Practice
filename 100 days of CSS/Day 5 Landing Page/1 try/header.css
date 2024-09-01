@@ -5,18 +5,20 @@
 }
 
 .header__icon {
-    height: 2.5rem;
-    margin-left: 3rem;
-    margin-right: 1rem;
-    width: 2.5rem;
+    height: 5rem;
+    margin-left: 7rem;
+    margin-right: 1.5rem;
+    width: 5rem;
     background-color: white;
 }
 
 .header__brand {
     margin-right: auto;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: serif;
 }
 
 .header__nav {
-    margin: auto 3rem
+    margin: auto 4rem;
+    font-size: 1.8rem;
 }

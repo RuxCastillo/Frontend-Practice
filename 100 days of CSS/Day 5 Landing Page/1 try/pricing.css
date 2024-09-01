@@ -1,14 +1,15 @@
 .main__pricing {
-    justify-content: space-evenly;
+    justify-content: center;
 }
  .main__pricing div {
     border: 3px solid black;
-    width: 20rem;
-    height: 25rem;
+    width: 30rem;
+    height: 35rem;
     flex-direction: column;
     justify-content: stretch;
     text-align: center;
     font-size: 1.6rem;
+    margin: 0 3rem;
  }
 
  .main__pricing * {
@@ -16,26 +17,27 @@
  }
 
  .main__pricing h3 {
-    line-height: 4rem;
+    line-height: 5rem;
     background-color: var(--secondary-color);
  }
 
  .main__pricing h4 {
-    line-height: 5rem;
+    line-height: 7rem;
     font-size: 2rem;
  }
 
  .main__pricing ul {
-    height: 10rem;
+    height: 14rem;
  }
 
  .main__pricing li {
-    line-height: 2.5rem;
+    line-height: 3.5rem;
     list-style-type: none;
  }
 
  .main__pricing button {
-    height: 3rem;
+    height: 4rem;
     margin: auto;
-    width: 8rem;
+    width: 10rem;
+    font-size: 1.6rem;
  }
