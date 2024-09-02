@@ -11,3 +11,21 @@ html {
     font-size: 62.5%;
     font-family: sans-serif;
 }
+
+@media (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 42%;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 37%;
+    }
+}

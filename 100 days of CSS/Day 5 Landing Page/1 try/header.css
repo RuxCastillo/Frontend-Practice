@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.header > div {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
 .header__icon {
     height: 5rem;
     margin-left: 7rem;
@@ -21,4 +27,16 @@
 .header__nav {
     margin: auto 4rem;
     font-size: 1.8rem;
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__icon {
+        margin-left: 0;
+    }
+    .header__brand {
+        margin-right: 0;
+    }
 }

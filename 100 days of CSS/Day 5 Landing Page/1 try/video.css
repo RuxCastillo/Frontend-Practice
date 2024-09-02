@@ -6,5 +6,10 @@
     border: 1px solid black;
     height: 31.5rem;
     width: 60rem;
+}
 
+@media (max-width: 900px) {
+    .main__video iframe {
+        width: 30rem;
+    }
 }
