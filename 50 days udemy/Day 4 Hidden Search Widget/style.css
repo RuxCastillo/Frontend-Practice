@@ -29,25 +29,28 @@ input {
     height: 2rem;
     padding-left: .5rem;
     width: 10rem;
+    border: none;
     z-index: -1;
-    transition: width .5s linear;
+    transition: all .5s linear;
 
 }
 
 .hide {
     width: 2rem;
-    position: absolute;
-    transition: position .5s linear;
+    transition: all .5s linear;
+    z-index: -1;
+    transform: translateX(2rem);
 }
     
 
 .lupa {
-    background-color: #f7f7f7;
+    background-color: #e0e0e0;
     height: 2rem;
     width: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-self: end;
-    transition: .5s linear;
+    transition: all .5s linear;
+    border: none;
 }
