@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+input {
+    height: 2rem;
+    padding-left: .5rem;
+    width: 10rem;
+    z-index: -1;
+    transition: width .5s linear;
+
+}
+
+.hide {
+    width: 2rem;
+    position: absolute;
+    transition: position .5s linear;
+}
+    
+
+.lupa {
+    background-color: #f7f7f7;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: end;
+    transition: .5s linear;
+}
