@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body img {
+    object-fit: contain;
+    width: 100%;
+    filter: blur(30px)
+}
+
+.container {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    text-shadow: 2px 2px 5px black;
+    z-index: 3;
+}
