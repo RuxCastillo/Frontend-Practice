@@ -1,18 +1,100 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	height: 100vh;
+	position: relative;
+}
+
+#play {
+	width: 50%;
+	position: relative;
+	left: 0;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(0, 0, 255, 0.1), rgba(0, 0, 255, 0.1));
+	transition: all 1s linear;
+}
+
+#xbox {
+	width: 50%;
+	position: relative;
+	right: 0;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(0, 255, 0, 0.1), rgba(0, 255, 0, 0.1));
+	transition: all 1s linear;
+}
+
+img {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	object-fit: cover;
+	background-repeat: no-repeat;
+}
+
+#playimg {
+	left: 0;
+}
+
+#xboximg {
+	right: 0;
+}
+
+h2 {
+	color: white;
+	font-size: 3rem;
+	transform: translateY(-5rem);
+	width: 100%;
+	text-align: center;
+}
+
+button {
+	transform: translateY(-5rem);
+	margin-top: 2rem;
+	border: 3px solid white;
+	background-color: transparent;
+	padding: 1.2rem;
+	width: 12.5rem;
+	color: white;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	transform: scale(0.98);
+	transform: translateY(-5rem);
+}
+
+.left #play {
+	width: 100%;
+	transition: all 1s linear;
+	z-index: 1;
+}
+
+.right #xbox {
+	width: 100%;
+	transition: all 1s linear;
+	z-index: 1;
 }
