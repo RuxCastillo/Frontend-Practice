@@ -1,18 +1,108 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	background-color: rgb(77, 77, 224);
+	border-radius: 5px;
+}
+
+.container {
+	background-color: rgb(41, 41, 224);
+	padding: 2rem;
+	border-radius: 5px;
+}
+
+.container * {
+	padding: 0.5rem 0;
+}
+
+h1 {
+	margin: 0.5rem 0;
+	font-size: 2.5rem;
+	color: white;
+}
+
+.control-form {
+	color: white;
+	position: relative;
+	padding: 1rem 0;
+	margin: 1.5 0;
+}
+
+input {
+	display: block;
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	color: white;
+	height: 2rem;
+}
+
+label {
+	position: absolute;
+	font-size: 1rem;
+	top: 0;
+}
+
+label span {
+	display: inline-block;
+	transition: 1s linear;
+}
+
+input:focus + label span,
+input:valid + label span {
+	display: absolute;
+	transform: translateY(-2rem);
+	font-size: 0.7rem;
+	color: aqua;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active {
+	outline: 0;
+	border-color: aqua;
+}
+
+button {
+	width: 100%;
+	height: 2.5rem;
+	border-radius: 5px;
+	background-color: aqua;
+	border: none;
+	margin: 1.5rem 0;
+	color: white;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px black;
+}
+
+button:active {
+	transform: scale(0.98);
+	filter: brightness(80%);
+}
+
+p {
+	margin-bottom: 0.5rem;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: aqua;
 }
