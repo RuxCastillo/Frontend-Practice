@@ -1,18 +1,45 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	background-color: #e1e1e1;
+	text-align: center;
+	flex-wrap: wrap;
+}
+
+.key {
+	display: inline-flex;
+	padding: 10px;
+	border: 2px solid #cccaca;
+	margin: 15px;
+	font-size: 20px;
+	flex-direction: column;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+	flex-direction: column;
+	margin: 10px;
+	min-width: 150px;
+	background-color: #eee;
+	position: relative;
+	height: 70px;
+	line-height: 50px;
+}
+
+.title {
+	position: absolute;
+	top: -44px;
+	left: 0;
+	text-align: center;
+	width: 100%;
 }
