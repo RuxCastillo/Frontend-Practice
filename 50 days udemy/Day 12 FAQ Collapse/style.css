@@ -1,18 +1,104 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	background-color: #bdb8b8;
+	padding: 3rem;
+}
+
+.faq-container {
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.faq-block {
+	border: 2px solid black;
+	width: 600px;
+	height: 100px;
+	border-radius: 10px;
+	margin: 2rem;
+	padding: 2rem;
+	position: relative;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.faq-block.active {
+	height: 175px;
+	background-color: white;
+}
+
+.faq-block .question {
+	margin-bottom: 1rem;
+}
+
+.faq-block .answer {
+	display: none;
+}
+
+.faq-block.active .answer {
+	display: block;
+}
+
+.botones {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	color: white;
+	font-size: 1.4rem;
+}
+
+.botones .fa-xmark,
+.botones .fa-chevron-down {
+	background-color: #bdb8b8;
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	text-align: center;
+	line-height: 1.55rem;
+}
+
+.botones .fa-xmark {
+	display: none;
+}
+
+.active .fa-xmark {
+	display: block;
+}
+
+.active .fa-chevron-down {
+	display: none;
+}
+
+.faq-container .active::before,
+.faq-container .active::after {
+	content: '\f075';
+	font-family: 'Font Awesome 5 Free';
+	position: absolute;
+	font-size: 7rem;
+	opacity: 0.2;
+	top: 20px;
+	left: 30px;
+	color: rgb(139, 139, 204);
+}
+
+.faq-container .active::before {
+	transform: rotateY(180deg);
+	top: -10px;
+	left: 0px;
+	color: rgb(132, 233, 132);
 }
