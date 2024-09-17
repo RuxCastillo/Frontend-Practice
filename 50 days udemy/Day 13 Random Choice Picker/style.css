@@ -1,18 +1,56 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	background-color: rgb(87, 196, 240);
+}
+
+.container {
+	max-width: 50rem;
+}
+
+h3 {
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+#textarea {
+	width: 100%;
+	height: 5rem;
+	display: block;
+	border: none;
+	padding: 8px;
+}
+
+.options {
+	display: flex;
+	flex: 0 0 100%;
+}
+
+li {
+	width: max-content;
+	list-style-type: none;
+	margin: 6px 6px 6px;
+	background: orange;
+	border-radius: 50px;
+	padding: 10px;
+	color: white;
+}
+
+.escogido {
+	background-color: rgb(127, 127, 218);
 }
