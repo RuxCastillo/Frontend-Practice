@@ -31,25 +31,21 @@ function agregandoLi(x) {
 
 function inicioRandom() {
 	console.log('inicia inicioRamdon');
-	const vueltas = 10;
-	const listaNodos = document.querySelectorAll('li');
-	console.log(listaNodos);
+	const vueltas = 30;
 
 	let primero = setInterval(() => {
+		const listaNodos = document.querySelectorAll('li');
 		const choosenOne = Math.floor(Math.random() * listaNodos.length);
-		console.log(choosenOne, listaNodos[choosenOne]);
-		listaNodos[choosenOne].classList.add('escogido');
-		console.log('agregado');
-		//seleccionado(listaNodos[choosenOne]);
-		//quitarSeleccionado(listaNodos[choosenOne]);
-	}, 1000);
+		seleccionado(listaNodos[choosenOne]);
+		quitarSeleccionado(listaNodos[choosenOne]);
+	}, 100);
 
 	setTimeout(() => {
-		console.log('ganador');
+		const listaNodos = document.querySelectorAll('li');
 		clearInterval(primero);
 		const choosenOne = Math.floor(Math.random() * listaNodos.length);
 		seleccionado(listaNodos[choosenOne]);
-	}, 1000 * vueltas);
+	}, 100 * vueltas);
 }
 
 function seleccionado(element) {
@@ -61,5 +57,5 @@ function quitarSeleccionado(element) {
 	setTimeout(() => {
 		element.classList.remove('escogido');
 		console.log('quito', element);
-	}, 2000);
+	}, 100);
 }
