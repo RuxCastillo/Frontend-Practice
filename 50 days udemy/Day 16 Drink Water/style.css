@@ -1,18 +1,101 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	background-color: rgb(31, 158, 243);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	color: white;
+}
+
+h1 {
+	margin: 15px;
+	letter-spacing: 2px;
+}
+
+h2 {
+	margin-bottom: 40px;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+.cup {
+	height: 300px;
+	width: 150px;
+	background-color: white;
+	border: 3px solid blue;
+	margin: 20px;
+	position: relative;
+	border-radius: 0 0 36px 36px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: rgb(31, 158, 243);
+	text-align: center;
+}
+
+.faltante {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+}
+
+.faltante span {
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.lleno {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 0%;
+	background-color: rgb(162, 213, 255);
+	width: 100%;
+	border-radius: 0 0 30px 30px;
+	transition: background-color 2s ease;
+	bottom: 0;
+}
+
+.lleno span {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.all-cup-small {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 460px;
+	margin: 0 auto;
+}
+
+.cup-small {
+	height: 150px;
+	width: 75px;
+	border-radius: 0 0 25px 25px;
+	background-color: white;
+	transition: background-color 1s linear, color 1s linear;
+}
+
+.drink {
+	background-color: rgb(162, 213, 255);
+	transition: background-color 1s linear, color 1s linear;
+	color: white;
+}
+
+h3 {
+	font-weight: normal;
 }
