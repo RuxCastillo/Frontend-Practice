@@ -1,18 +1,92 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(55, 7, 230);
+}
+
+header {
+	height: 70px;
+	display: block;
+	background-color: rgb(95, 95, 228);
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+form {
+	margin: 0 50px;
+}
+
+header input {
+	height: 35px;
+	line-height: 25px;
+	border-radius: 50px;
+	border: 2px solid blue;
+	padding: 10px;
+	background-color: rgb(95, 95, 228);
+}
+
+input::placeholder {
+	color: white;
+	opacity: 0.5;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 300px;
+	margin: 25px;
+	background-color: rgb(95, 95, 228);
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	position: relative;
+	overflow: hidden;
+}
+
+.card img {
+	object-fit: contain;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.card h3 {
+	display: inline-block;
+	color: white;
+	font-weight: 500;
+	margin: 15px 15px;
+}
+
+.card span {
+	display: inline-block;
+	position: relative;
+	left: 110px;
+	background-color: blue;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.card .absolute {
+	height: 250px;
+	padding: 20px;
+	background-color: white;
+	position: absolute;
+	transform: translateY(0);
+	transition: transform 1s ease-out;
+}
+
+.absolute h4 {
+	margin: 15px;
+}
+
+.card:hover .absolute {
+	transform: translateY(-100%);
 }
