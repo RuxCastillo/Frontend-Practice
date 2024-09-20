@@ -31,6 +31,11 @@ header input {
 	border: 2px solid blue;
 	padding: 10px;
 	background-color: rgb(95, 95, 228);
+	color: white;
+}
+
+input:focus {
+	outline: 0;
 }
 
 input::placeholder {
@@ -40,6 +45,7 @@ input::placeholder {
 
 main {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -55,6 +61,7 @@ main {
 .card img {
 	object-fit: contain;
 	width: 100%;
+	min-height: 85%;
 	margin: 0 auto;
 }
 
@@ -63,24 +70,33 @@ main {
 	color: white;
 	font-weight: 500;
 	margin: 15px 15px;
+	font-size: 1.2rem;
+	height: 40px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	line-height: 1.2rem;
+	max-width: 70%;
 }
 
 .card span {
 	display: inline-block;
-	position: relative;
-	left: 110px;
-	background-color: blue;
+	position: absolute;
+	right: 10px;
+	background-color: rgb(49, 49, 255);
+	bottom: 5px;
 	padding: 5px;
 	margin-bottom: 20px;
+	font-weight: 700;
 }
 
 .card .absolute {
 	height: 250px;
+	min-height: fit-content;
 	padding: 20px;
-	background-color: white;
 	position: absolute;
 	transform: translateY(0);
 	transition: transform 1s ease-out;
+	background-color: white;
 }
 
 .absolute h4 {
@@ -89,4 +105,14 @@ main {
 
 .card:hover .absolute {
 	transform: translateY(-100%);
+}
+
+.card span.green {
+	color: green;
+}
+.card span.orange {
+	color: orange;
+}
+.card span.red {
+	color: red;
 }
