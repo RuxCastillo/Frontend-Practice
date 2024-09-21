@@ -1,18 +1,51 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	background-color: black;
+}
+
+button {
+	background-color: purple;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: white;
+	padding: 30px 40px;
+	border: 1px solid purple;
+	position: relative;
+	overflow: hidden;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.circle {
+	position: absolute;
+	background-color: white;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+	to {
+		transform: translate(-50%, -50%) scale(3);
+		opacity: 0;
+	}
 }
