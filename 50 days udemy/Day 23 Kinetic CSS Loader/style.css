@@ -1,18 +1,69 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+	background-color: gray;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.cargando {
+	position: relative;
+}
+
+.cargando::before,
+.cargando::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: white;
+	transform: rotate(0deg);
+	animation: trianguloA 2s linear infinite 0.5s;
+}
+
+.cargando::after {
+	transform: rotate(90deg);
+	animation: triangulob 2s linear infinite;
+}
+
+@keyframes trianguloA {
+	0%,
+	25% {
+		transform: rotate(0deg);
+	}
+	50%,
+	75% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes triangulob {
+	0%,
+	25% {
+		transform: rotate(90deg);
+	}
+	50%,
+	75% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(450deg);
+	}
 }
