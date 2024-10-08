@@ -7,6 +7,60 @@
 		<title>Document</title>
 	</head>
 	<body>
+		<div class="screen">
+			<h1>Atrapa el insecto</h1>
+			<button class="btn" id="start-btn">Jugar</button>
+		</div>
+
+		<div class="screen">
+			<h1>Escoge tu insecto "favorito"</h1>
+			<ul class="insects-list">
+				<li>
+					<button class="choose-insect-btn">
+						<p>Mosca</p>
+						<img
+							src="http://pngimg.com/uploads/fly/fly_PNG3946.png"
+							alt="mosca"
+						/>
+					</button>
+				</li>
+				<li>
+					<button class="choose-insect-btn">
+						<p>Mosquito</p>
+						<img
+							src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png"
+							alt="mosquito"
+						/>
+					</button>
+				</li>
+				<li>
+					<button class="choose-insect-btn">
+						<p>Araña</p>
+						<img
+							src="http://pngimg.com/uploads/spider/spider_PNG12.png"
+							alt="araña"
+						/>
+					</button>
+				</li>
+				<li>
+					<button class="choose-insect-btn">
+						<p>Cucaracha</p>
+						<img
+							src="http://pngimg.com/uploads/roach/roach_PNG12163.png"
+							alt="cucaracha"
+						/>
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<div class="screen game-container">
+			<h3 id="time">Tiempo: 00:00</h3>
+			<h3 id="score">Puntos: 0</h3>
+			<h5 id="message" class="message">
+				¿Ya te enfadaste?<br />Estas jugando un juego imposible
+			</h5>
+		</div>
 		<script src="./script.js"></script>
 	</body>
 </html>
