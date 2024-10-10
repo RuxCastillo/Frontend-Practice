@@ -1,0 +1,52 @@
+.header {
+	height: 5rem;
+	background-color: gray;
+}
+
+.header__nav {
+	padding-top: 1.6rem;
+	margin-bottom: 1.6rem;
+}
+
+.header__nav-ul {
+	display: flex;
+	font-size: 1.8rem;
+}
+
+.header__logo {
+	padding: 0 2.5rem;
+	font-size: 4rem;
+}
+
+.header__nav-ul li {
+	list-style-type: none;
+	padding: 0 1rem;
+	margin: 0 1rem;
+}
+
+.header__nav-ul li a {
+	line-height: 4rem;
+}
+
+.header__nav-ul .header__margin-right {
+	margin-right: auto;
+	color: var(--naranja);
+}
+
+.header__nav-ul .header__der-free {
+	color: var(--azul);
+	font-weight: 500;
+}
+
+.header__nav-ul li:last-child {
+	padding-right: 5rem;
+	font-size: 1.3rem;
+	font-weight: 300;
+}
+
+.header__nav-ul a {
+	text-decoration: none;
+	color: inherit;
+	font-family: Segoe UI, Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
