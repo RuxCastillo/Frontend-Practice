@@ -109,6 +109,10 @@ body {
 	font-weight: 800;
 }
 
+.text__title:hover {
+	color: var(--yellow);
+}
+
 .text__description {
 	font-size: 1rem;
 	color: var(--gray-500);
