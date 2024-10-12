@@ -11,6 +11,8 @@ function App() {
 		duration: 10,
 	});
 
+	const inputIsValid = number.duration >= 1;
+
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setNumber({
@@ -23,7 +25,10 @@ function App() {
 		<>
 			<Header />
 			<Input twb={handleChange} number={number} />
-			<Resultados number={number} />
+			{!inputIsValid && (
+				<p className="center">Please enter a duration greater than zero.</p>
+			)}
+			{inputIsValid && <Resultados number={number} />}
 		</>
 	);
 }
