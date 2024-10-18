@@ -4,7 +4,7 @@ export default function Mainjsx({
 	children: React.ReactNode;
 }): JSX.Element {
 	return (
-		<main className=" flex justify-center items-center h-screen">
+		<main className=" flex justify-around items-center h-screen w-screen">
 			{children}
 		</main>
 	);
