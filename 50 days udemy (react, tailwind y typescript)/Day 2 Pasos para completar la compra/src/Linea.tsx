@@ -1,3 +1,7 @@
-export default function Linea(): JSX.Element {
-	return <div className="w-11/12 absolute bg-gray-200 h-4 -z-10"></div>;
+export default function Linea(props: any): JSX.Element {
+	return (
+		<div
+			className={`${props.width} absolute ${props.color} h-4 -z-10 origin-left left-10 transition-all duration-1000`}
+		></div>
+	);
 }
