@@ -4,6 +4,10 @@ export class MenuPage extends HTMLElement {
 
 		this.root = this.attachShadow({ mode: 'open' });
 
+		const template = document.getElementById('menu-page-template');
+		const content = template.content.cloneNode(true);
+		this.root.appendChild(content);
+
 		const styles = document.createElement('style');
 		this.root.appendChild(styles);
 
@@ -16,10 +20,7 @@ export class MenuPage extends HTMLElement {
 	}
 
 	connectedCallback() {
-		const template = document.getElementById('menu-page-template');
-		const content = template.content.cloneNode(true);
-		this.root.appendChild(content);
-
+		this.render();
 		window.addEventListener('appmenuchange', () => {
 			this.render();
 		});

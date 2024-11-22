@@ -14,8 +14,6 @@ const Router = {
 		Router.go(location.pathname);
 	},
 	go: (route, addToHistory = true) => {
-		console.log(`Going to ${route}`);
-
 		if (addToHistory) {
 			history.pushState({ route }, '', route);
 		}
@@ -23,18 +21,16 @@ const Router = {
 		switch (route) {
 			case './':
 				pageElement = document.createElement('menu-page');
-				pageElement.textContent = 'Menu';
 				break;
 			case './order':
 				pageElement = document.createElement('order-page');
-				pageElement.textContent = 'Your Order';
 				break;
 			default:
-				if (route.startsWith('./product-')) {
+				if (route.startsWith('/product-')) {
 					pageElement = document.createElement('details-page');
 					pageElement.textContent = 'Details';
 					const paramId = route.substring(route.lastIndexOf('-') + 1);
-					pageElement.dataset.id = paramId;
+					pageElement.dataset.productId = paramId;
 				}
 		}
 		if (pageElement) {
